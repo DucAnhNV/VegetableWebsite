@@ -1,95 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Dancing+Script:wght@700&family=Fuzzy+Bubbles&family=Nunito&family=Poppins&family=Shadows+Into+Light&display=swap');
+
 :root{
     --ThmeGre: #3ea055;
     --ThmeYllw: #ffd140;
     --ThmeWhit: #f7f7f7;
 }
 
-.available{
-    width: 100%;
-    padding:70px 0;
-}
-
-.available h3{
-    font-size: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.available h3 span{
-    color: var(--ThmeGre);
-    margin-left: 15px;
-}
-
-.av_box{
-    width: 95%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
-}
-
-.av_card{
-    width: 322px;
-    height: 500px;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-}
-
-.av_image{
-    width: fit-content;
-    height: 250px;
-    margin: 0 auto;
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--ThmeGre);
+    height: 100vh;
     overflow: hidden;
 }
 
-.av_image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: 0.3s;
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    width: 400px;
 }
 
-.av_image:hover img{
-    transform: scale(1.1);
-}
-
-.av_info h4{
-    width: 60%;
+.center h1{
     text-align: center;
-    margin: 10px auto 10px auto;
-    font-size: 25px;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt-field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt-field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt-field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt-field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--ThmeGre);
+    transition: .5s;
+}
+
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label{
+    top: -5px;
     color: var(--ThmeGre);
 }
 
-.av_info p{
-    text-align: center;
-    margin-top: 10px;
-    line-height: 22px;
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before{
+    width: 100%;
 }
 
-.av_info h5{
-    text-align: center;
-    margin-top: 10px;
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6aa6a;
+    cursor: pointer;
 }
 
-.av_btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    margin: 0 80px;
-    border-radius: 30px 130px 30px;
-    padding: 7px;
-    transition: 0.3s;
+.pass:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
     background: var(--ThmeGre);
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fe;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover{
+    background: black;
+    transition: .5s;
+}
+
+.signup-link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.signup-link a{
+    color: #2691d9;
     text-decoration: none;
 }
 
-.av_btn:hover{
-    background: black;
+.signup-link a:hover{
+    text-decoration: underline  ;
 }

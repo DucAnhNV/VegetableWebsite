@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Dancing+Script:wght@700&family=Fuzzy+Bubbles&family=Nunito&family=Poppins&family=Shadows+Into+Light&display=swap');
+
+:root{
+    --ThmeGre: #3ea055;
+    --ThmeYllw: #ffd140;
+    --ThmeWhit: #f7f7f7;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+section{
+    padding: 20px 10%;
+}
+
+/* .contact{
+    background-image: url(/image/Dev/footer.png );
+    background-size: contain;
+} */
+
+.contact .heading h2{
+    font-size: 45px;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.contact .heading h2 span{
+    color: var(--ThmeGre);
+}
+
+.contact .heading p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-info{
+    flex: 1 1 20rem;
+}
+
+.contact-form{
+    flex: 1 1 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info h2{
+    font-size: 2.3rem;
+    color: var(--ThmeGre);
+}
+
+.contact-info p{
+    font-size: 1.8rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+}
+
+.address i {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+}
+
+.address span{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.social{
+    margin-top: 1rem;
+}
+
+.social a{
+    font-size: 30px;
+    color: var(--ThmeGre);
+    margin-right: 1rem;
+}
+
+.social a:hover{
+    color: black;
+}
+
+.contact-form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, 
+textarea{
+    width: 100%;
+    padding: 17px;
+    border-radius: 0.5rem;
+    outline: none;
+    margin-bottom: 1rem;
+    border: 2px solid var(--ThmeGre);
+    box-shadow: 0 4px 4px 2px rgb(14 55 54 / 15%);
+}
+
+form input::placeholder,
+textarea::placeholder{
+    color: var(--ThmeGre);
+}
+
+form textarea{
+    resize: none;
+    height: 150px;
+}
+
+.contact-form form .submit{
+    max-width: 100px;
+    background: var(--ThmeGre);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+.contact-form form .submit:hover{
+    background:black;
+}
+
+.copyright{
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+}
